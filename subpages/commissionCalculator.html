@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Prowizji</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="../scripts/commissionCalculator.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Prowizji dla Sprzedawców</h1>
+    </header>
+    <main>
+        <label for="saleAmount">Wprowadź wartość sprzedaży:</label>
+        <input type="number" id="saleAmount" placeholder="Wartość sprzedaży">
+        
+        <label for="commissionRate">Wprowadź procent marży:</label>
+        <input type="number" id="commissionRate" placeholder="Procent marży" step="0.1">
+        
+        <button onclick="calculateCommission()">Oblicz prowizję</button>
+        <p>Wynik prowizji: <span id="commissionResult">0</span> zł</p>
+    </main>
+</body>
+</html>
